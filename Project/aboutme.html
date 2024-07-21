@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        .h1{
+            color: #533a9e; 
+        }
+        .legend{
+            font-size: 130%;
+            color: #7f0481;
+        }
+        fieldset{
+            border-color: #26577C;
+            background-color: #F1F6F9;
+        }
+        fieldset,button{
+            margin-right: 250px;
+        }
+        .div{
+            text-align: right;
+        }        
+    </style>
+</head>
+<body>
+    <form>
+        <h1 class="h1"><u>About Me</u></h1>
+        <fieldset>
+            <legend class="legend"><b>Personal_Details</b></legend>
+            <br>
+            <label for="firstname"><b>First Name</b></label>
+            <input type="text" required id="firstname" name="fname">
+            <br><br>
+            <label for="lastname"><b>Last Name</b></label>           
+            <input type="text" required id="lastname" name="lname">
+            <br><br>
+            <label for="date"><b>Date Of Birth</b></label>           
+            <input type="date" required id="date" name="date">
+            <br><br>
+            <label><b>Gender</b></label>  
+            <br>         
+            <input type="radio" required id="male" name="gender">
+            <label for="male">Male</label>  
+            <input type="radio" required id="female" name="gender">
+            <label for="female">Female</label>  
+            <input type="radio" required id="other gender" name="gender">
+            <label for="other gender">Other Gender</label>
+            <br><br>
+            <label for="email"><b>Email Id</b></label>  
+            <input type="email" required id="email" placeholder="ex:abc@gmail" name="email">
+            <br><br>
+            <label for="nmbr"><b>Contact No</b></label> 
+            <input type="number" required id="nmbr" name="number"> 
+            <br><br>
+            <label for="adr"><b>Address</b></label> 
+            <input type="address" required id="adr" name="address"> 
+        </fieldset>
+    </form>
+    <br>
+    <div class="div">
+       <button type="button" onclick="location.href='education.html'">Next</button>
+    </div>
+</body>
+</html>
